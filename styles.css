@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(245, 183, 111);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 430px;
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240, 240, 240);
+    border-radius: 5%;
+    text-align: center;
+}
+
+.calculator-container {
+    width: 100%;
+}
+
+.display-section {
+    text-align: end;
+    margin: 1.5rem 1.2rem 0;
+    overflow: hidden !important;
+    height: 100px;
+}
+
+.arthm-section p {
+    font-size: 1.3rem;
+    margin-bottom: -.5rem;
+    font-weight: 500;
+}
+
+.keys-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 0 1.2rem;
+}
+
+.keys-section div {
+    padding: 12px 0;
+    background-color: #e0e0e0;
+    border-radius: 20%;
+    cursor: pointer;
+    color: rgb(75, 73, 73);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001,
+                inset 0px 0px 0px 0px #fff9,
+                inset 0px 0px 0px 0px #0001,
+                inset 0px 0px 0px 0px #fff9,        
+                inset 0px 0px 0px 0px #0001;
+}
+
+#equal-to {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: rgb(250, 133, 65);
+    color: rgb(228, 227, 222);
+    border-radius: 8%;
+}
